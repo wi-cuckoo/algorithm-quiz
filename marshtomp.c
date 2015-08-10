@@ -1,3 +1,10 @@
+/*
+ * From hihocoder, see http://hihocoder.com/problemset/problem/1082
+ * about operating string
+ * coded by louis wei
+ * in Wuhan-337 prison
+ */
+
 #include <stdio.h>
 #include <string.h>
 

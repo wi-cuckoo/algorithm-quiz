@@ -1,3 +1,10 @@
+/*
+ * The question is in hihocoder
+ * about it's description,
+ * see http://hihocoder.com/problemset/problem/1051
+ * coded by louis wei
+ * in Wuhan-337 prison
+ */
 #include <stdio.h>
 
 int maxday (int ,int, int day[]);
