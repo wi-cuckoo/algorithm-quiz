@@ -18,7 +18,14 @@ int main(int argc, char const *argv[])
             ++total;
     }
     for (int i = 0; i < 26; i++)
-        printf("%c: %.2f%%\n", i+'a', letter[i]*100.0/total);
-        
+    {
+        int idx = i;
+        printf("%c: ", idx+'A');
+        int num = letter[idx];
+        // 此处需要获得显示设备宽度，以确定 100% 的显示长度不超出一行范围
+        for (int j = 0; j < num*1000/total; j++)
+            putchar('>');
+        printf(" %.2f%%\n", letter[idx]*100.0/total);
+    }
     return 0;
 }
